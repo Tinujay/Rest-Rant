@@ -19,7 +19,7 @@ app.get('/', (req,res) => {        //home page route
 
 
 app.get('*', (req, res) => {      //404 route / error page 
-    res.status(404).send('<h1>404 Page</h1>')
+    res.render('error404')
 })
 
 

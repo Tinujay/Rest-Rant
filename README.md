@@ -45,3 +45,14 @@ The Dark navy blue color could be used for highlighted text, images borders and 
 | POST   | /places/:id/rant | Create a rant (comment) about a particular place |
 | DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |
 | GET    | * | 404 page (matches any route not defined above) |
+
+
+
+
+
+Data Point	Type	Description
+Name	string	The name of the restaurant
+City	string	The city where the restaurant is located
+State	string	The state where the restaurant is located
+Cuisines	string	The types of cuisine offered by the restaurant
+Pic	string	A URL link to an image of the restaurant

@@ -5,7 +5,14 @@ const express = require('express')
 const router = express.Router()
 
 
-// GET /places
+
+//GET/places/new  (this needs to come before :id)
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
+
+
+// GET /places/:id
 router.get('/', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',

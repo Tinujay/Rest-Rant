@@ -2,4 +2,13 @@ h1 {
     text-align: center;
     color: cornflowerblue;
   }
-  
+
+
+.sadpug {
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    width: 40%;
+}

@@ -3,11 +3,15 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
+
+
 //Express Settings
 // app.set('views', _dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+
 
 
 //Controllers & Routes

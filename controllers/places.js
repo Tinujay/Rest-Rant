@@ -2,6 +2,7 @@
 
 const { application } = require('express')
 const express = require('express')
+const placesarray = require('../models/placesarray.js')
 const router = express.Router()
 
 const places = require('../models/placesarray.js')
@@ -19,6 +20,23 @@ router.get('/', (req, res) => {
   res.render('places/index', { places })   //this is the variable to the array in placesarray
 })
   
+
+//show route
+router.get('/:id', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!placesarray[id]) {
+    res.render('error404')
+  }
+  else {
+    res.render('places/show', {place: placesarray[id]})
+  }
+})
+
+
+
 
 //POST - new data
 router.post('/', (req, res) => {

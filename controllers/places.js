@@ -27,11 +27,11 @@ router.get('/:id', (req, res) => {
   if (isNaN(id)) {
     res.render('error404')
   }
-  else if (!placesarray[id]) {
+  else if (!places[id]) {       //check
     res.render('error404')
   }
   else {
-    res.render('places/show', {place: placesarray[id]})
+    res.render('places/show', {place: places[id]})
   }
 })
 

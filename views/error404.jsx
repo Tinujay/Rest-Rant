@@ -3,7 +3,7 @@ const Def = require('./default')
 
 function error404 () {
     return (
-      <Def>
+      <Def>     {/* this is passed as the children of the html prop */}
           <main>
               <h1>404: PAGE NOT FOUND</h1>
               <p>Oops, sorry, we can't find this page!</p>

@@ -1,4 +1,4 @@
-const React = require('react')
+const React = require('react') //imports react library (allows to write HTML like elements)(put in every JSX)
 const Def = require('./default')
 
 function home () {

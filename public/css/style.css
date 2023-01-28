@@ -33,3 +33,52 @@ img {
     border-color: darkgreen;
     background-color: rgb(177, 230, 167);     
 }
+
+
+
+nav {
+    background-color: #921a1a; /* Red color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display:inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #adedb5; 
+    text-decoration: none;
+}
+
+
+body {
+    background-color: rgb(111, 137, 104);
+    text-align: center;
+  }
+  
+  main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgb(223, 208, 197);
+  }
+  
+

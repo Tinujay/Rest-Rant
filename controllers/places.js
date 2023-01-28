@@ -3,6 +3,7 @@
 const { application } = require('express')
 const express = require('express')
 const router = express.Router()
+
 const places = require('../models/placesarray.js')
 
 
@@ -15,7 +16,7 @@ router.get('/new', (req, res) => {
 
 // GET /places/:id
 router.get('/', (req, res) => {
-  res.render('places/index', { places })
+  res.render('places/index', { places })   //this is the variable to the array in placesarray
 })
   
 

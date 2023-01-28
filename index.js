@@ -1,7 +1,9 @@
-//Modules and Globals
-require('dotenv').config();
-const express = require('express');
-const app = express();
+// Modules and Globals
+require('dotenv').config()
+const express = require('express')
+const app = express()
+const methodOverride = require('method-override')
+
 
 
 
@@ -11,7 +13,7 @@ app.set('view engine', 'jsx')   //method used in Express.js to set the view engi
 app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public')) // use the 'public' folder as a static folder (useful for images/CSS)
 app.use(express.urlencoded({ extended: true })) // middleware function in Express.js that parses the request body of an incoming HTTP request. 
-
+app.use(methodOverride('_method'))
 
 
 //Controllers & Routes

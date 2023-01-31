@@ -7,7 +7,7 @@ function index (data) {
     return (
       <div className="col-sm-6">
         <h2>
-          <a href={`/places/${index}`} >
+          <a className="title" href={`/places/${index}`} >
             {place.name}
           </a>
         </h2>
@@ -26,7 +26,7 @@ function index (data) {
     return (
       <Def>
           <main>
-              <h1>Places to Rave About</h1>
+              <h1 className="indextitle">Places to Rave About!</h1>
               <div className='row'>
                 {placesFormatted}
               </div>

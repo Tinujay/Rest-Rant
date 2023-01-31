@@ -5,7 +5,8 @@ function edit_form (data) {
     return (
         <Def>
           <main>
-          <h1>Add a New Place</h1>
+          <h1>Make Some Changes</h1>
+          <br></br>
             <form method="POST" action={`/places/${data.id}?_method=PUT`}>
                 <div className="row">
                     <div className="form-group col-sm-6">
@@ -24,11 +25,13 @@ function edit_form (data) {
                         <label htmlFor="state">State</label>
                         <input className="form-control" id="state" name="state" />
                     </div>
-                    <div className="form-group col-sm-6">
+                    <div className="form-group col-sm-12">
                         <label htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required />
                     </div>
-                        <input className="btn btn-primary" type="submit" value="Edit Place" />
+                    <div style={{display: 'flex', justifyContent: 'center'}}>
+                        <input className="btn btn-primary" type="submit" value="Save Changes" />
+                    </div>
                 </div>
             </form>
           </main>

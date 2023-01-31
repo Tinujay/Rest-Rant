@@ -1,6 +1,15 @@
 const React = require('react')
 
 
+
+const Footer = () => {
+    return (
+      <footer>
+        <p>Copyright © 2023</p>
+      </footer>
+    )
+  }
+
 function Def (html) {
     return (
         <html>
@@ -24,7 +33,8 @@ function Def (html) {
                         </li>
                     </ul>
                 </nav>
-                {html.children}     
+                {html.children}  
+                <Footer />   
             </body>
         </html>
     )

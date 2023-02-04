@@ -9,6 +9,7 @@ function show (data) {
                 <p>Located in {data.place.city}, {data.place.state}</p>
 
                 <img src={data.place.pic} alt={data.place.name} />  
+                <p>{data.place.cuisines}</p>
 
             <h3>Rating:</h3>
                 <p>Currently Unrated</p>

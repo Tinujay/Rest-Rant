@@ -11,6 +11,7 @@ function home () {
               <div class="credits">
                 Photo by <a href="AUTHOR_LINK">Chad Montano</a> on <a href="UNSPLASH_LINK">UNSPLASH</a>
               </div>
+              <br></br>
               </div>
           </main>
       </Def>

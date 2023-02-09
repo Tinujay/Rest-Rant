@@ -5,7 +5,7 @@ db.Place.create([{
     city: 'Seattle',
     state: 'WA',
     cuisines: 'Thai, Pan-Asian',
-    pic: '/images/h-thai-ml-tables.jpg',
+    pic: 'https://www.flowermoundyummythai.com/wp-content/uploads/2019/02/Top-7-Most-Popular-Thai-Foods.jpg',
     founded: 1989
 }, {
     name: 'Coding Cat Cafe',

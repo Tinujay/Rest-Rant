@@ -3,6 +3,7 @@
 
 const mongoose = require('mongoose')
 
+
 const placeSchema = new mongoose.Schema({
   name: { type: String, required: true },
   pic: {type: String, default: 'https://wallpapercave.com/wp/wp3105346.jpg'},
